@@ -12,8 +12,8 @@
             <a href = "index.html"> About </a>
             <a href = "product.html"> Product </a>
             <a href = "methods.html"> Methods </a>
-            <a href = "contribute.html"> Contribute </a>
             <a href = "contact_us.html"> Contact Us </a>  
+            <p> <i><b> Airplane Ticket Price Prediction Tool </b></i></p>
         </nav>
         <div class = 'content'>
             <div>
@@ -44,14 +44,19 @@
             <h2> The Model: Linear Regression </h2>
             <p>
                 Our modeling process contains of three components: construct preprocessor, build model, and validate model.
-                Our modeling process heavily depends on the Python module Scikit-Learn. <br> 
+                Our modeling process heavily depends on the Python module Scikit-Learn. <br><br> 
                 <b> Step 1: Construct Preprocessor </b>
                 <br>
+                There are five predictor variables, and four of them are categorical. Since machine learning models cannot directly interpret categorical values, 
+                these variables has to transform into numbers through One-Hot-Encoding. Utilizing the pre-built Scikit-Learn One-Hot-Encoder and ColumnTransformer,
+                a preprocessor was built. The preprocessor takes in a Pandas DataFrame and outputs a 2D array. Both the model training process and the final product
+                will utilize this preprocessor to prepare the data.
+                <br><br>
                 <b> Step 2: Build Model </b>
-                <br>
+                After the cateforical features are transformed appropriately, we trained and tested three different machien learning models -- Linear Regression, 
+                Support Vector Machine Regression, and Random Forest Regression. 
+                <br><br>
                 <b> Step 3: Validate Model </b>
-
-                
             </p>
             <h2> Model Deployment </h2>
         </div>

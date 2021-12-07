@@ -38,6 +38,13 @@ html, body{
   color: rgb(24, 52, 71);
 }
 
+nav p{
+  font-size: 13pt;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 20pt;
+  float: right;
+}
+
 /* Landing Page  ---------------------------------------------------------*/
 .title{
   background-image: url("images/background2.JPG");
