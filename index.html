@@ -1,35 +1,60 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Ticket</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <nav class = "topbar">
-            <a href = "index.html"> Home </a>
-            <a href = "#about"> About </a>
-            <a href = "product.html"> Product </a>
-            <a href = "methods.html"> Methods </a>
-            <a href = "contact_us.html"> Contact Us </a>  
-            <p> <i><b> Airplane Ticket Price Prediction Tool </b></i></p>
-        </nav>
 
-        <div class = "landing">
-            <div class = "title">
-                <h1 id = "landing-title"> Airplane Ticket Price Prediction </h1>
-            </div>
-            <a href = "#about"> <div class="arrow bounce"> </div> </a>
-        </div>
+<head>
+    <title>Ticket</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <div class = "intro" id = "about">
-            <div class = "introbox">
-                <p> Image Place Holder </p>
-            </div>
-            <div class = "introbox">
-                <p> Course and project introduction </p>
-            </div>
+<body>
+    <nav class="topbar">
+        <a href="index.html"> Home </a>
+        <a href="#about"> About </a>
+        <a href="product.html"> Product </a>
+        <a href="methods.html"> Methods </a>
+        <a href="contribute.html"> Contribute </a>
+        <a href="contact_us.html"> Contact Us </a>
+    </nav>
+
+    <div class="landing">
+        <div class="title">
+            <h1 id="landing-title"> Airplane Ticket Price Prediction </h1>
         </div>
-    </body>
+        <a href="#about">
+            <div class="arrow bounce"> </div>
+        </a>
+    </div>
+
+    <div class="intro" id="about">
+        <div class="introbox">
+            <h2> Motivation & Goal </h2>
+            <p> Flight ticket prices usually fluctuate a lot and can be very difficult to guess. The airline industry is
+                considered as one of the most sophisticated industry in using complex pricing strategies. Pricing in
+                airplane tickets could be a brain game between airline companies and customers - airplane companies
+                always try to maintain a high revenue, while travelers are usually seeking to find a ticket at its
+                lowest price. In order to uncover the mysterious pattern of flight ticket prices, we will try to utilize
+                some machine learning techniques and build models to predict the flight prices. Ultimately, we can
+                provide multiple price predictions for users to refer to so that they can optimize their travelling
+                plan.</p>
+
+
+        </div>
+        <div class="introbox">
+            <h2> Course & Project Introduction </h2>
+            <p> As the final project for the course IDS 706: Data Engineering and DataOps, we aimed to apply and
+                integrate cloud computing techniques that we learned throughout the semester to build this end-to-end
+                prediction tool. In the context of this project, we would like to build the entire data pipeline and
+                integrate following cloud computing techniques: </p>
+            <ul>
+                <li><b>Amazon SageMaker</b>: build and train the ML model</li>
+                <li><b>AWS S3 Website</b>: build interactive website for the end users</li>
+                <li><b>AWS Lambda</b>: take user input, preprocess data, invoke model endpoint, output predictions</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
 </html>
