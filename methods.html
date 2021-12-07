@@ -52,10 +52,11 @@
                 a preprocessor was built. The preprocessor takes in a Pandas DataFrame and outputs a 2D array. Both the model training process and the final product
                 will utilize this preprocessor to prepare the data.
                 <br><br>
-                <b> Step 2: Build Model </b>
+                <b> Step 2 & 3: Build Model and Validation </b>
                 We used the Amazon SageMaker Studio for model training and deploying. The scalability of Amazon SageMaker allows us to process the relatively large training set. 
                 After the categorical features were transformed appropriately, we trained and tested three different machien learning models -- Linear Regression, 
-                Support Vector Machine Regression, and Random Forest Regression.  Among the three models, the Linear Regression Model has the best accuracy and the best 
+                Support Vector Machine Regression, and Random Forest Regression. We used the pre-built Scikit-Learn to fit the training data. Then, we evaluated the training accuracy 
+                and testing accuracy of the model through the Scikit-Learn pre-built score function (R score). Among the three models, the Linear Regression Model has the best accuracy and the best 
                 runtime. Therefore, we decided to proceed with the linear regression model.
             </p>
                 <div class="row">
@@ -66,11 +67,11 @@
                       <img src="images/scikit-logo.jpg" alt="Scikit-Learn" style="width:100%">
                     </div>
                 </div>
-            <p>
-                <b> Step 3: Model Validation </b> 
-                Amazon SageMaker allows us to save the trained model into an Endpoint.
-            </p>
             <h2> Model Deployment </h2>
+            <p>
+                Amazon SageMaker allows us to deploy the model to an endpoint. The endpoint stores a trained model, in which it can be accessed and used throught AWS. This model is the main component
+                of our project.
+            </p>
         </div>
     </body>
 </html>
