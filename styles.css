@@ -108,8 +108,14 @@ nav p{
   width: 44%;
   margin-left: 2.5%;
   margin-right: 2.5%;
-  border-style: dashed;
-  background-color: #ddd;
+}
+
+.introbox p{
+  font-size: 15pt;
+}
+
+.introbox ul{
+  font-size: 15pt;
 }
 
 /* Methods Styles -------------------------------------------------------*/
