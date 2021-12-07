@@ -15,16 +15,46 @@
             <a href = "contribute.html"> Contribute </a>
             <a href = "contact_us.html"> Contact Us </a>  
         </nav>
-        <div>
-            <h1 class = "subpage-title"> Methods </h1>
-        </div>
         <div class = 'content'>
+            <div>
+                <h1 class = "subpage-title"> Methods </h1>
+            </div>
             <h2> Data, Data Cleaning, and Data Visualization </h2>
             <p> We are using a dataset from Kaggle: <a href = "https://www.kaggle.com/zernach/2018-airplane-flights"> Cleaned 2018 Flights </a> <br>
-                This dataset contains more than <b>9 million</b> observations and <b>13 fields</b>.</p>
-            <h2> The Model: Linear Regressor </h2>
-            <h2> Model Deployment </h2>
+                This dataset contains more than <b>9 million</b> cleaned domestic U.S. flight observations and <b>13 data fields</b>.
+                After removal of irrelevant data fields from the data, we finialized on using the following variables in our model: 
 
+                <ul>
+                    <li>
+                        Quarter (Categorical)
+                    </li>
+                    <li>
+                        Airline Company (Categorical)
+                    </li>
+                    <li>
+                        Origin (Categorical)
+                    </li>
+                    <li>
+                        Destination (Categorical)
+                    </li>
+                    <li>
+                        Number of Tickets Ordered (Numerical)
+                    </li>
+                </ul>
+            </p>
+            <h2> The Model: Linear Regression </h2>
+            <p>
+                Our modeling process contains of three components: construct preprocessor, build model, and validate model.
+                Our modeling process heavily depends on the Python module Scikit-Learn. <br> 
+                <b> Step 1: Construct Preprocessor </b>
+                <br>
+                <b> Step 2: Build Model </b>
+                <br>
+                <b> Step 3: Validate Model </b>
+
+                
+            </p>
+            <h2> Model Deployment </h2>
         </div>
     </body>
 </html>
