@@ -1,3 +1,4 @@
+/* General styles ---------------------------------------------------------*/
 html, body{
     margin:0;
     padding:0;
@@ -32,6 +33,13 @@ html, body{
   color: white;
 }
 
+.subpage-title{
+  margin-left: 3%;
+  font-size: 40pt;
+  color: rgb(24, 52, 71);
+}
+
+/* Landing Page  ---------------------------------------------------------*/
 .title{
   background-image: url("images/background2.JPG");
   background-size: cover;
@@ -41,7 +49,7 @@ html, body{
   margin-right: auto;
 }
 
-h1{
+#landing-title{
   padding: 22%;
   font-size: 40pt;
   color: rgb(24, 52, 71);
@@ -95,4 +103,15 @@ h1{
   margin-right: 2.5%;
   border-style: dashed;
   background-color: #ddd;
+}
+
+
+/* Methods Styles -------------------------------------------------------*/
+.content h2{
+  margin-left: 3%;
+}
+
+.content p{
+  margin-left: 5%;
+  font-size: 15pt;
 }
