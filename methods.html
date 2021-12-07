@@ -53,8 +53,18 @@
                 will utilize this preprocessor to prepare the data.
                 <br><br>
                 <b> Step 2: Build Model </b>
-                After the cateforical features are transformed appropriately, we trained and tested three different machien learning models -- Linear Regression, 
-                Support Vector Machine Regression, and Random Forest Regression. 
+                We used the Amazon SageMaker Studio for model training and deploying. The scalability of Amazon SageMaker allows us to process the relatively large training set. 
+                After the categorical features were transformed appropriately, we trained and tested three different machien learning models -- Linear Regression, 
+                Support Vector Machine Regression, and Random Forest Regression.  Among the three models, the Linear Regression Model has the best accuracy and the best 
+                runtime. Therefore, we decided to proceed with the linear regression model.
+                <div class="row">
+                    <div class="column" id = "sagemaker-logo">
+                      <img src="images/sagemaker_logo.png" alt="Amazon SageMaker" style="width:100%">
+                    </div>
+                    <div class="column" id = "scikit-logo">
+                      <img src="images/scikit-logo.jpg" alt="Scikit-Learn" style="width:100%">
+                    </div>
+                </div>
                 <br><br>
                 <b> Step 3: Validate Model </b>
             </p>
